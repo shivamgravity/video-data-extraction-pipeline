@@ -1,6 +1,6 @@
 import shutil
-from downloader import download_video
-from ffmpeg_utils import extract_frames_ffmpeg
+from src.downloader import download_video
+from src.ffmpeg_utils import extract_frames_ffmpeg
 
 def process_video(url, output_dir, interval, logger):
     video_path, temp_dir = download_video(url, logger)
