@@ -30,7 +30,7 @@ def main():
                 config["interval"],
                 logger
             )
-            logger.info(f"Saved {count} frames → {output_dir}")
+            logger.info(f"Saved {count} frames -> {output_dir}")
         except Exception:
             logger.exception("Video processing failed")
 
