@@ -28,21 +28,20 @@ It supports **interactive mode**, **JSON configuration**, and **multiple config 
 
 ---
 
-## 🧠 Why FFmpeg (not OpenCV)?
+## 🧠 Why FFmpeg?
 
-This project intentionally uses **FFmpeg** instead of OpenCV for frame extraction because:
+This project uses **FFmpeg** for frame extraction because:
 
 - Faster and more reliable
 - Excellent codec support
 - Accurate FPS handling
 - Industry-standard for media pipelines
 
-OpenCV can be added later for **post-processing**, not extraction.
-
 ---
 
 ## 📁 Project Structure
 
+```css
 video-data-extraction-pipeline/
 │
 ├── src/
@@ -65,6 +64,7 @@ video-data-extraction-pipeline/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 ---
 
@@ -98,9 +98,9 @@ Verify:
     ffmpeg -version
     ```
 
-## Usage
+## 🚀 Usage
 
-### Interactive Mode
+### 1. Interactive Mode
 
 ```bash
 python main.py
@@ -112,7 +112,7 @@ You will be prompted for:
 * Folder naming mode
 * Video URLs
 
-### Using a Config Profile
+### 2. Using a Config Profile
 
 ```bash
 python main.py --profile test
@@ -123,7 +123,7 @@ Loads:
 configs/config.test.json
 ```
 
-### Using a Custom Config File
+### 3. Using a Custom Config File
 
 ```bash
 python main.py --config my_config.json
@@ -153,7 +153,7 @@ Example: `configs/config.test.json`
 | `folder_mode` | `manual` or `auto` |
 | `urls` | List of YouTube URLs |
 
-## Output
+## 📂 Output
 
 Frames are saved as:
 
@@ -167,7 +167,7 @@ results/
 
 Downloaded videos are **automatically deleted** after extraction.
 
-## Logging
+## 🧾 Logging
 
 * Logs are written to:
     ```bash
@@ -180,7 +180,7 @@ Downloaded videos are **automatically deleted** after extraction.
 
 Logs are **ASCII-safe** for Windows compatibility.
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
 * Resume / skip already proecssed videos
 * CLI flags for overrides
@@ -189,5 +189,5 @@ Logs are **ASCII-safe** for Windows compatibility.
 * Post-processing hooks (OpenCV optional)
 * Unit tests
 
-## License
+## 📜 License
 MIT License.
