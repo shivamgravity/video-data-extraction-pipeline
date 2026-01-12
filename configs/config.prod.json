@@ -1,0 +1,9 @@
+{
+  "interval": -1,
+  "mode": "batch",
+  "folder_mode": "auto",
+  "urls": [
+    "https://www.youtube.com/watch?v=VIDEO1",
+    "https://www.youtube.com/watch?v=VIDEO2"
+  ]
+}
